@@ -1,4 +1,4 @@
-# 🎮 CineVault – A Movie Watchlist App
+# 🎮 NowPlaying – A Movie Watchlist App
 
 A simple and elegant movie watchlist app built with **React + Vite** using **TMDb API** to fetch movie data. Easily search, add movies to your watchlist, and manage them with local storage.
 
@@ -51,9 +51,10 @@ The app will be live at **`http://localhost:5173`**
 ---
 
 ## 📷 Screenshots
-| Home Page | Watchlist |
-|-----------|----------|
-| ![image](https://github.com/user-attachments/assets/bfa5713e-c877-49d5-95ca-0bad9688388d)
+| Home Page |
+|-----------|
+| ![image](https://github.com/user-attachments/assets/bfa5713e-c877-49d5-95ca-0bad9688388d) |
+| Watchlist |
 | ![image](https://github.com/user-attachments/assets/1a43f3ca-4158-49c8-ac25-8480ffb898bd) |
 
 ---
