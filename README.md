@@ -102,7 +102,6 @@ export const searchMovies = async (query) => {
  ┃ ├📝 api.js
  ├📝 App.jsx
  ├📝 main.jsx
- ├📝 index.css
 ```
 
 ---
@@ -134,7 +133,7 @@ export const searchMovies = async (query) => {
 ## 🌟 Show Some Love
 If you like this project, **⭐ Star it on GitHub** and **Share it with friends!**  
 
-🔗 **Live Demo:** [Coming Soon]  
+🔗 **Live Demo:** (https://preethamgoud.github.io/Watchlist/)  
 
 ---
 
