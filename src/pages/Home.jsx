@@ -26,7 +26,22 @@ function Home() {
 
   const handleSearch = async (e) => {
     e.preventDefault();
-    if (!searchQuery.trim()) return;
+
+    if (!searchQuery.trim()) {
+      setLoading(true);
+      try {
+        const popularMovies = await getPopularMovies(); // Load popular movies when search is empty
+        setMovies(popularMovies);
+        setError(null);
+      } catch (err) {
+        console.log(err);
+        setError("Failed to load movies...");
+      } finally {
+        setLoading(false);
+      }
+      return;
+    }
+
     if (loading) return;
 
     setLoading(true);
@@ -66,12 +81,9 @@ function Home() {
         <div>Loading...</div>
       ) : (
         <div className="movies-grid">
-          {movies.map(
-            (movie) =>
-              movie.title.toLowerCase().includes(searchQuery) && (
-                <MovieCard movie={movie} key={movie.id} />
-              )
-          )}
+          {movies.map((movie) => (
+            <MovieCard movie={movie} key={movie.id} />
+          ))}
         </div>
       )}
     </div>
