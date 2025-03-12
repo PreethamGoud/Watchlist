@@ -1,12 +1,29 @@
-# React + Vite
+# 🎬 CineVault – A Movie Watchlist App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and elegant movie watchlist app built with **React + Vite** using **TMDb API** to fetch movie data. Easily search, add movies to your watchlist, and manage them with local storage.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Features
+✅ Search for movies using **TMDb API**  
+✅ View **popular movies** on the homepage  
+✅ Add movies to your **watchlist (favorites)**  
+✅ Remove movies from the watchlist  
+✅ **Persist data** using `localStorage`  
+✅ Responsive **UI for mobile & desktop**  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+- **Frontend:** React, Vite, Context API, React Router  
+- **API:** The Movie Database (TMDb)  
+- **State Management:** Context API  
+- **Storage:** LocalStorage  
+
+---
+
+## 🚀 Getting Started
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/your-username/movie-watchlist.git
+cd movie-watchlist
