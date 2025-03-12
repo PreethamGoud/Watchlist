@@ -3,12 +3,12 @@ name: Deploy Vite App to GitHub Pages
 on:
   push:
     branches:
-      - main  # Change if your main branch has a different name
+      - main  # Change if your main branch is different
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -29,5 +29,6 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages  # Deploy to the 'gh-pages' branch
-          folder: dist  # The build output folder for Vite
+          branch: gh-pages  # Deploy to GitHub Pages branch
+          folder: dist
+          token: ${{ secrets.GITHUB_TOKEN }}
